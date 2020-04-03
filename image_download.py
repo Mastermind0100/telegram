@@ -10,7 +10,7 @@ def some_func(incoming, update):
     urllib.request.urlretrieve(photo["file_path"],filename)
         
 def main():
-    updater = Updater('804669526:AAEOQ2Vnp-nyfFZrM61vdVv74aTocNMFgA0')
+    updater = Updater('<Enter the unique id here>')
     dp = updater.dispatcher
     dp.add_handler(MessageHandler(Filters.all, some_func))
     updater.start_polling()
